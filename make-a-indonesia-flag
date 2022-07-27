@@ -1,0 +1,68 @@
+import turtle
+from turtle import *
+
+screen = turtle.Screen()
+t = turtle.Turtle()
+t.speed(5)
+
+# make poles or rods
+t.penup()
+t.goto(-300, 400)
+t.pendown()
+t.color("brown")
+t.begin_fill()
+t.forward(5)
+t.right(90)
+t.forward(1000)
+t.right(90)
+t.forward(5)
+t.right(90)
+t.forward(1000)
+t.penup()
+t.goto(-294, 400)
+t.pendown()
+
+# make a red flag above
+t.color('red')
+t.begin_fill()
+t.right(90)
+t.forward(800)
+t.right(90)
+t.forward(167)
+t.right(90)
+t.forward(800)
+t.end_fill()
+t.left(90)
+t.forward(167)
+
+# white flag below
+t.color("white")
+t.begin_fill()
+t.forward(167)
+t.left(90)
+t.forward(800)
+t.left(90)
+t.forward(167)
+
+# border is black
+t.color("black")
+t.left(90)
+t.forward(800)
+
+turtle.pencolor("black")
+t.pendown()
+
+t.penup
+turtle.write(
+    "*******************\n")
+turtle.write(
+    "Happy Independence Day\n",
+    font=("Comic Sans", 24, "underline"))
+turtle.write(
+    "Dirgahayu HUT RI 78",
+    font=("Calibri", 18, "italic"))
+t.penup()
+
+# to hold the ouput window
+turtle.done()
+exit()
